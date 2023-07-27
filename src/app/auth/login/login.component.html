@@ -1,12 +1,12 @@
 <div class="form login">
     <div class="form-content">
         <header>Login</header>
-        <form action="#">
+        <form #form="ngForm" (ngSubmit)="login(form)">
             <div class="field input-field">
-                <input type="email" placeholder="Email" class="input">
+                <input type="email" placeholder="Email" class="input" name="email" ngModel #inputEmail="ngModel" required>
             </div>
             <div class="field input-field">
-                <input type="password" placeholder="Password" class="password">
+                <input type="password" placeholder="Password" class="password" name="password" ngModel #inputPass="ngModel" required minlength="6">
                 <i class='bx bx-hide eye-icon'></i>
             </div>
             
@@ -15,6 +15,6 @@
             </div>
         </form>
         <div class="form-link">
-            <span>Don't have an account? <a href="/register" class="link signup-link">Signup</a></span>
+            <span>Don't have an account? <a routerLink="/register" class="link signup-link">Signup</a></span>
         </div>
     </div> 

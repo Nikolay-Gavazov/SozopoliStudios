@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./logout.component.css']
 })
 export class LogoutComponent {
-
+  
 }

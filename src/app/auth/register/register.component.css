@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -23,14 +23,7 @@
     background: #d8f6f7;
     margin: 6em auto
 }
-.forms.show-signup .form.signup{
-    opacity: 1;
-    pointer-events: auto;
-}
-.forms.show-signup .form.login{
-    opacity: 0;
-    pointer-events: none;
-}
+
 header{
     font-size: 28px;
     font-weight: 600;
@@ -127,4 +120,11 @@ form{
         padding: 20px 10px;
     }
     
+}
+
+.ng-invalid .ng-touched, .ngModelGroup .ng-touched .ng-invalid .ng-dirty{
+    border-left-color: red;
+}
+.ng-valid, .ngModelGroup .ng-valid .ng-dirty{
+    border-left-color: green !important;
 }

@@ -1,23 +1,37 @@
 <div class="form signup">
     <div class="form-content">
         <header>Register</header>
-        <form>
+        <form #form="ngForm" (ngSubmit)="register(form)">
             <div class="field input-field">
-                <input type="email" placeholder="Email" class="input">
+                <input type="email" placeholder="Email" class="input" name="email" #emailInput="ngModel" required ngModel>
             </div>
+            <ng-container *ngIf="emailInput.touched">
+                <p class="error" *ngIf="emailInput.errors?.['required']">
+                    Email is required!
+                </p>
+            </ng-container>
             <div class="field input-field">
-                <input type="password" placeholder="Create password" class="password">
+                <input type="password" placeholder="Create password" class="password" name="password" #passInput="ngModel" required minlength="6" ngModel>
             </div>
+            <ng-container *ngIf="passInput.touched">
+                <p class="error" *ngIf="passInput.errors?.['required']">
+                    Password is required!
+                </p>
+                <p class="error" *ngIf="passInput.errors?.['minlength']">
+                    Password must be at least 5 characters!
+                </p>
+            </ng-container>
             <div class="field input-field">
-                <input type="password" placeholder="Confirm password" class="password">
+                <input type="password" placeholder="Confirm password" class="password" name="rePass" #rePassInput="ngModel" required ngModel>
                 <i class='bx bx-hide eye-icon'></i>
             </div>
+            <p class="error" *ngIf="passInput.value != rePassInput.value">Repeat Password does not match Password!</p>
             <div class="field button-field">
-                <button>Signup</button>
+                <button [disabled]="form.invalid">Signup</button>
             </div>
         </form>
         <div class="form-link">
-            <span>Already have an account? <a href="/login" class="link login-link">Login</a></span>
+            <span>Already have an account? <a routerLink="/login" class="link login-link">Login</a></span>
         </div>
     </div>
     

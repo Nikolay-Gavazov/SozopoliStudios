@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -17,7 +18,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     ContactsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[HeaderComponent,FooterComponent,NotFoundComponent]
 })
