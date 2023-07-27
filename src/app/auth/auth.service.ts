@@ -23,11 +23,11 @@ export class AuthService implements OnDestroy{
    }
 
    login(email: string, password: string){
-    return this.http.post<User>('http://localhost:3000/api/login', { email: email, password: password}).pipe(tap(user => this.user$$.next(user)));
+    return this.http.post<User>(`${apiUrl}/login`, { email: email, password: password}).pipe(tap(user => this.user$$.next(user)));
    }
 
    register(email: string, password: string){
-    return this.http.post<User>('http://localhost:3000/api/register', { email:email, password:password}).pipe(tap(user => this.user$$.next(user)));
+    return this.http.post<User>(`${apiUrl}/register`, { email:email, password:password}).pipe(tap(user => this.user$$.next(user)));
    }
 
    logout(){
