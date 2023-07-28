@@ -11,9 +11,10 @@ const {apiUrl} = environment;
 })
 export class AuthService implements OnDestroy{
   private user$$ = new BehaviorSubject<User | undefined>(undefined);
-  user$ = this.user$$.asObservable();
+  public user$ = this.user$$.asObservable();
 
   user: User | undefined;
+  USER_KEY = '[user]';
 
   subscription: Subscription;
   constructor(private http: HttpClient) {
@@ -23,7 +24,9 @@ export class AuthService implements OnDestroy{
    }
 
    login(email: string, password: string){
-    return this.http.post<User>(`${apiUrl}/login`, { email: email, password: password}).pipe(tap(user => this.user$$.next(user)));
+    return this.http
+    .post<User>(`/api/login`, { email, password})
+    .pipe(tap(user => this.user$$.next(user)));
    }
 
    register(email: string, password: string){
