@@ -11,6 +11,7 @@ import { StudiosComponent } from './studio/studios/studios.component';
 import { BookingComponent } from './studio/booking/booking.component';
 import { AuthModule } from './auth/auth.module';
 import { StudioModule } from './studio/studio.module';
+import { appInterceptorProvider } from './app.interceptor';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { StudioModule } from './studio/studio.module';
     HttpClientModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [appInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
