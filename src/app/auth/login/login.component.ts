@@ -9,17 +9,17 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private authService: AuthService, private router: Router){}
+  constructor(private authService: AuthService, private router: Router) { }
 
-  login(form: NgForm):void{
-    if(form.invalid) return;
+  login(form: NgForm): void {
+    if (form.invalid) return;
 
-    const {email, password} = form.value;
+    const { email, password } = form.value;
 
-    this.authService.login(email, password).subscribe(()=>{
+    this.authService.login(email, password).subscribe(() => {
       form.reset();
       this.router.navigate(['/']);
     });
-  
-}
+
+  }
 }
