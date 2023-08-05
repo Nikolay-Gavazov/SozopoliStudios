@@ -4,19 +4,19 @@ import { Observable } from "rxjs";
 import { AuthService } from "src/app/auth/auth.service";
 
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 
-export class AuthActivate implements CanActivate{
+export class AuthActivate implements CanActivate {
 
-    constructor(private authService: AuthService){
+    constructor(private authService: AuthService) {
 
     }
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):
-    | boolean
-    | UrlTree 
-    | Observable<boolean | UrlTree> 
-    | Promise<boolean | UrlTree> {
+        | boolean
+        | UrlTree
+        | Observable<boolean | UrlTree>
+        | Promise<boolean | UrlTree> {
         return false;
     }
 }
