@@ -9,17 +9,17 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  constructor(private authService: AuthService, private router: Router){}
+  constructor(private authService: AuthService, private router: Router) { }
 
-  register(form: NgForm){
-    if(form.invalid){
+  register(form: NgForm) {
+    if (form.invalid) {
       return;
     }
-    const {email, password} = form.value;
+    const { email, password } = form.value;
 
-    this.authService.register(email, password).subscribe(()=>{
+    this.authService.register(email, password).subscribe(() => {
       console.log(form.value);
-      
+
       form.reset();
       this.router.navigate(['/']);
     })
