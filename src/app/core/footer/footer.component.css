@@ -1,6 +1,6 @@
 footer {
     margin: 0 auto;
-    position: absolute;
+    position: inherit;
     bottom: 0;
     width: 100%;
     font-family: 'Oswald', sans-serif;
