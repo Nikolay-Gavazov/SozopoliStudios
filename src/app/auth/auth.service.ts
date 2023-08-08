@@ -1,6 +1,6 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { BehaviorSubject, Subscription, tap } from 'rxjs';
-import { User } from '../types/user';
+import { User } from '../shared/types/user';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
@@ -19,7 +19,8 @@ export class AuthService implements OnDestroy {
   subscription: Subscription;
   constructor(private http: HttpClient) {
     this.subscription = this.user$.subscribe((user) => {
-      this.user = user;
+    this.user = user;
+    
     })
   }
 
@@ -31,6 +32,7 @@ export class AuthService implements OnDestroy {
 
   register(email: string, password: string) {
     return this.http.post<User>(`${apiUrl}/register`, { email: email, password: password }).pipe(tap(user => this.user$$.next(user)));
+    
   }
 
   logout() {
@@ -38,7 +40,7 @@ export class AuthService implements OnDestroy {
   }
 
   get isLoggedIn() {
-    return !!this.user;
+    return localStorage.getItem("user");
   }
 
   ngOnDestroy(): void {
