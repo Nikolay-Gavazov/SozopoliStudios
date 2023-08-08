@@ -78,7 +78,10 @@ form{
     cursor: pointer;
 }
 .field button:hover{
-    background-color: #016dcb;
+    background-color: #0256a0;
+}
+.field button:disabled{
+    background-color: #0171d3;
 }
 .form-link{
     text-align: center;
@@ -118,4 +121,11 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.ng-invalid .ng-touched, .ngModelGroup .ng-touched .ng-invalid .ng-dirty{
+    border-color: red;
+}
+.ng-valid, .ngModelGroup .ng-valid .ng-dirty{
+    border-color: green !important;
 }
