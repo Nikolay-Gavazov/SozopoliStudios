@@ -12,6 +12,7 @@ import { BookingComponent } from './studio/booking/booking.component';
 import { AuthModule } from './auth/auth.module';
 import { StudioModule } from './studio/studio.module';
 import { appInterceptorProvider } from './app.interceptor';
+import { LoaderComponent } from './shared/loader/loader.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { appInterceptorProvider } from './app.interceptor';
     GalleryComponent,
     StudiosComponent,
     BookingComponent,
+    LoaderComponent,
     
   ],
   imports: [
