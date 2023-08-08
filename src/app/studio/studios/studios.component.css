@@ -1,0 +1,9 @@
+.carousel-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.text-white fst-marck fs-3{
+    background-color: rgba(0, 0, 0, 0.244)!important; 
+}
