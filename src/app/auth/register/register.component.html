@@ -3,8 +3,7 @@
         <header>Register</header>
         <form #form="ngForm" (ngSubmit)="register(form)">
             <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" name="email" #emailInput="ngModel" required
-                    ngModel>
+                <input type="email" placeholder="Email" class="input" name="email" #emailInput="ngModel" required ngModel >
             </div>
             <ng-container *ngIf="emailInput.touched">
                 <p class="error" *ngIf="emailInput.errors?.['required']">
@@ -20,7 +19,7 @@
                     Password is required!
                 </p>
                 <p class="error" *ngIf="passInput.errors?.['minlength']">
-                    Password must be at least 5 characters!
+                    Password must be at least 6 characters!
                 </p>
             </ng-container>
             <div class="field input-field">
