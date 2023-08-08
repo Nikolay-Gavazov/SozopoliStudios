@@ -19,3 +19,6 @@ body{
   background:url(https://www.xpatathens.com/timthumb.php?src=/media/k2/items/cache/17bc5ddd29285a8428ac04665f097964_L.jpg&w=750&h=430&zc=1&q=95) no-repeat top center #efeff1;
   background-size:cover;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
