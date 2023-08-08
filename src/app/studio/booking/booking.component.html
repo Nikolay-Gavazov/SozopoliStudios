@@ -1,1 +1,39 @@
-<p>booking works!</p>
+<div class="form booking">
+    <div class="form-content">
+        <header>Book your reservation</header>
+        <form #form="ngForm" (ngSubmit)="submit(form)">
+            <div class="field input-field">
+                <h5>Your Name:</h5>
+                <input type="email" placeholder="Ivan Ivanov" class="input" name="name" ngModel #inputName="ngModel" required >
+            </div>
+            
+            <div class="field input-field">
+                <h5>Email:</h5>
+                <input type="email" placeholder="ivan@gmail.com" class="input" name="email" ngModel #inputEmail="ngModel" required >
+            </div>
+                
+            <div class="field input-field">
+                <h5>Check in:</h5>
+                <input type="date" id="start" name="trip-start" value="{{date}}" min="2023-01-01" max="2023-12-31" ngModel #inputDateFrom="ngModel"/> 
+            </div>
+
+            <div class="field input-field">
+               <h5>Check out:</h5>
+                <input type="date" id="end" name="trip-end" value="{{date}}" min="2023-01-01" max="2023-12-31" ngModel #inputDateEnd="ngModel" />
+            </div>
+            <div class="field input-field">
+                <h5>Studio:</h5>
+                <select>
+                    <option *ngFor="let studio of studiosList" value="{{studio.studioName}}" ngModel #inputStudio="ngModel">{{studio.studioName}}</option>
+                </select>
+             </div>
+            <div class="field input-field" id="comments">
+                <h5>Comments:</h5>
+                <input type="text" placeholder="Comments(Optional)" class="input" name="comment" ngModel #inputComment="ngModel">
+            </div>
+
+            <div class="field button-field">
+                <button [disabled]="form.invalid">Send</button>
+            </div>
+        </form>
+    </div>
