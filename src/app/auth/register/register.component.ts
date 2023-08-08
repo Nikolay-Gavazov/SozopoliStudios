@@ -17,9 +17,8 @@ export class RegisterComponent {
     }
     const { email, password } = form.value;
 
-    this.authService.register(email, password).subscribe(() => {
-      console.log(form.value);
-
+    this.authService.register(email, password).subscribe((user) => {
+      localStorage.setItem("user", JSON.stringify(user));
       form.reset();
       this.router.navigate(['/']);
     })

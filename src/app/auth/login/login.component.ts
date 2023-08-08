@@ -16,7 +16,8 @@ export class LoginComponent {
 
     const { email, password } = form.value;
 
-    this.authService.login(email, password).subscribe(() => {
+    this.authService.login(email, password).subscribe((user) => {
+      localStorage.setItem("user", JSON.stringify(user));
       form.reset();
       this.router.navigate(['/']);
     });
