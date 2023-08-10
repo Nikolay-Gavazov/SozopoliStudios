@@ -150,3 +150,26 @@ form{
 .ng-valid, .ngModelGroup .ng-valid .ng-dirty{
     border-color: green !important;
 }
+
+@media screen and (max-width: 1171px) {
+    .form{
+        margin-top: 10em;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form{
+        margin-top: 5em;
+    }
+    header{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .form .field{
+        margin-top: 2em;
+    }
+    #comments{
+        margin-bottom: 3em;
+    }
+}

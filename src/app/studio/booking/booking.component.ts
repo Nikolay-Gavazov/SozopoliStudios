@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Studio } from 'src/app/shared/types/studio';
 import { StudioService } from '../studio.service';
+import { ContactService } from '../contact.service';
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
@@ -12,7 +13,7 @@ export class BookingComponent implements OnInit{
   studiosList: Studio[] = [];
   isLoading: boolean = true;
 
-  constructor(private studioService: StudioService){}
+  constructor(private studioService: StudioService, private contact: ContactService, private router: Router){}
 
   ngOnInit(): void {
     this.studioService.getStudios().subscribe({
@@ -29,7 +30,17 @@ export class BookingComponent implements OnInit{
   date = new Date();
 
   submit(form: NgForm){
-    console.log(form.value);
-    
+    console.log(form.value); 
+    this.contact.PostMessage(form.value).subscribe(response =>{
+      if(response){
+        alert("Your Booking request has been successfully sent");
+        
+          this.router.navigate(["/home"]);
+      }
+    },
+    error => {
+      console.log(error);
+      
+    })
   }
 }
