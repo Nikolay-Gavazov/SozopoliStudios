@@ -9,3 +9,8 @@ p{
     text-align: center;
     
 }
+@media screen and (max-width: 1171px) {
+    div{
+        margin-top: 14em;
+    }
+}
