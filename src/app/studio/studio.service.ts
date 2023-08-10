@@ -15,4 +15,7 @@ export class StudioService {
   getStudios(){
     return this.http.get<Studio[]>(`${apiUrl}/studios`)
   }
+  getStudio(id: string){
+    return this.http.get<Studio[]>(`${apiUrl}/studios/${id}`)
+  }
 }
