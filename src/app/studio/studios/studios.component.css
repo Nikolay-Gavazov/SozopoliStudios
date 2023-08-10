@@ -7,3 +7,17 @@
 .text-white fst-marck fs-3{
     background-color: rgba(0, 0, 0, 0.244)!important; 
 }
+
+@media screen and (max-width: 1171px) {
+ #myCarousel{
+    margin-top: 9em !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .w-100{
+    height: 80%;
+  }
+  .carousel-item div{
+    display: block !important;
+  }
+ }
