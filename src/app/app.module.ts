@@ -7,22 +7,16 @@ import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { GalleryComponent } from './studio/gallery/gallery.component';
-import { StudiosComponent } from './studio/studios/studios.component';
 import { AuthModule } from './auth/auth.module';
 import { StudioModule } from './studio/studio.module';
 import { appInterceptorProvider } from './app.interceptor';
-import { LoaderComponent } from './shared/loader/loader.component';
+import { ContactService } from './studio/contact.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    GalleryComponent,
-    StudiosComponent,
-    LoaderComponent,
-    
   ],
   imports: [
     RouterModule,
@@ -34,7 +28,7 @@ import { LoaderComponent } from './shared/loader/loader.component';
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
-  providers: [appInterceptorProvider],
+  providers: [appInterceptorProvider, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
