@@ -1,0 +1,25 @@
+<div *ngIf="isLoading">
+    <app-loader />
+  </div>
+<section id="deatils-page" *ngIf="!isLoading">
+    <div class="wrapper">
+        <div class="img">
+            <img src="{{studio.img}}">
+        </div>
+        <div class="info">
+            <div class="text">
+                <div class="text">
+                    <h1>Name: {{studio.studioName}}</h1>
+                    <p>Description: {{studio.description}}</p>
+                </div>
+            </div>
+            
+            <div class="btn">
+                <a href="/gallery" class="morePhotos">More photos</a>
+
+                <a href="/book" class="bookNow">Book now</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
