@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
+import { CreateComponent } from './create/create.component';
 import { BookingComponent } from './booking/booking.component';
 import { DetailsComponent } from './details/details.component';
 import { LoaderComponent } from '../shared/loader/loader.component';
@@ -16,6 +18,8 @@ import { StudioRoutingModule } from './studio-routing.module';
     DetailsComponent,
     LoaderComponent,
     GalleryComponent,
+    CreateComponent,
+    EditComponent,
   ],
   imports: [
     CommonModule,
