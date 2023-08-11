@@ -16,9 +16,11 @@
             
             <div class="btn">
                 <a routerLink="/studios/gallery" class="morePhotos">More photos</a>
-
                 <a routerLink="/studios/book" class="bookNow">Book now</a>
-                
+                <span *ngIf="isAdmin">
+                    <a routerLink="/studios/edit/{{studio._id}}" class="edit">Edit</a>
+                    <a class="delete" (click)="deleteStudio()">Delete</a>
+                </span>
             </div>
         </div>
     </div>

@@ -7,8 +7,15 @@ import { AuthService } from 'src/app/auth/auth.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  /* isAdmin: boolean = false; */
   constructor(private authService: AuthService) { }
   get isLoggedIn() {
     return this.authService.isLoggedIn;
   }
+  get isAdmin(){
+    if(this.authService.isLoggedIn){
+      return this.authService.userData.isAdmin;
+    }
+  }
+  
 }
