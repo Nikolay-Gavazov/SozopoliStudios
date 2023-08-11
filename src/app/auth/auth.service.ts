@@ -42,6 +42,14 @@ export class AuthService implements OnDestroy {
   get isLoggedIn() {
     return localStorage.getItem("user");
   }
+  
+  get userData() {
+    const user: any = localStorage.getItem("user");
+    if(user){
+      return JSON.parse(user)
+    }
+    return null;
+  }
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
