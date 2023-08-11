@@ -3,7 +3,7 @@
     width: 1100px;
     margin: 70px auto;
     border-radius: 7px 7px 7px 7px;
-    box-shadow: 0px 0px 3px 10px rgba(86, 124, 194, 0.911);
+    box-shadow: 0px 0px 3px 10px  #0171d3;
 }
 
 .img {
@@ -13,7 +13,7 @@
 }
 
 .img img {
-    border-radius: 12px 0 0 7px;
+    border-radius: 7px 0 0 7px;
     height: 100%;
     width: 100%;
 }
@@ -22,7 +22,7 @@
     float: left;
     height: 680px;
     width: 530px;
-    border-radius: 0 7px 10px 7px;
+    border-radius: 0 7px 7px 0;
     background-color: #ffffff;
 }
 
@@ -142,15 +142,11 @@ span {
         height: 680px;
         width: 1012px !important;
         margin: 130px 0 0 -3em !important;
-        border-radius: 7px 7px 7px 7px;
-        box-shadow: 0px 0px 3px 10px rgba(86, 124, 194, 0.911);
     }
     .info {
         float: left;
         height: 680px;
         width: 442px !important;
-        border-radius: 0 7px 10px 7px;
-        background-color: #ffffff;
     }
 }
 
@@ -160,7 +156,6 @@ span {
         width: 99% !important;
         margin: 130px auto !important;
         border-radius: 7px 7px 7px 7px;
-        box-shadow: 0px 0px 3px 10px rgba(86, 124, 194, 0.911);
     }
 
     .img{
@@ -176,6 +171,5 @@ span {
         height: 50%;
         width: 100%!important;
         border-radius: 0 0 7px 7px;
-        background-color: #ffffff;
     }
 }
