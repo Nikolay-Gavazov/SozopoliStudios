@@ -25,15 +25,16 @@ This is the exam project for the Angular course. For Frontend I used Angular and
   <li>Register and Log in in to an account</li>
   <li>Browse the studios and information about them.</li>
   <li>Browse the Gallery</li>
-  <li>Registered users can send registration request</li>
+  <li>Registered users can send reservation request</li>
 </ul>
 
 ### Admin Features
 
 <ul>
-  <li>creates a new studio</li>
+  <li>Creates a new studio</li>
   <li>Edits and deletes existing studios</li>
   <li>Browse the Gallery</li>
+  <li>Admin can't send reservation request</li>
 </ul>
 
 ## Demo
