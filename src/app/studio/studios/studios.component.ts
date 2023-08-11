@@ -19,9 +19,7 @@ export class StudiosComponent implements OnInit{
       next:(studios) =>{
         this.isLoading = false;
         this.studiosList = studios;
-        this.studio1 = this.studiosList.splice(0,1);  
-        console.log(this.studio1);
-        
+        this.studio1 = this.studiosList.splice(0,1);        
       },
       error:(error) =>{
         this.isLoading = false;
