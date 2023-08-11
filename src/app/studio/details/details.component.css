@@ -1,9 +1,9 @@
 .wrapper {
     height: 680px;
     width: 1100px;
-    margin: 140px auto;
+    margin: 70px auto;
     border-radius: 7px 7px 7px 7px;
-    box-shadow: 0px 0px 3px 10px rgba(86, 124, 194, 0.911);
+    box-shadow: 0px 0px 3px 10px  #0171d3;
 }
 
 .img {
@@ -13,7 +13,7 @@
 }
 
 .img img {
-    border-radius: 12px 0 0 7px;
+    border-radius: 7px 0 0 7px;
     height: 100%;
     width: 100%;
 }
@@ -22,13 +22,13 @@
     float: left;
     height: 680px;
     width: 530px;
-    border-radius: 0 7px 10px 7px;
+    border-radius: 0 7px 7px 0;
     background-color: #ffffff;
 }
 
 .text {
-    height: 300px;
-    width: 327px;
+    height: 330px;
+    width: 90%;
 }
 
 .text h1 {
@@ -125,16 +125,20 @@ span {
 }
 
 .bookNow {
-    background-color: rgba(86, 124, 194, 0.911);
+    background-color:  #0171d3;
+    text-decoration: none;
 }
 
 .bookNow:hover {
-    background-color: rgba(65, 92, 143, 0.911);
+    background-color: #0256a0;
 }
 
 .morePhotos {
-    background-color: rgba(135, 167, 98, 0.911);
-    text-align: center;
+    background-color: rgba(19, 189, 195, 0.911);
+    text-decoration: none;
+}
+.morePhotos:hover {
+    background-color: rgba(11, 141, 146, 0.911);
 }
 
 @media screen and (max-width: 1171px) {
@@ -142,25 +146,19 @@ span {
         height: 680px;
         width: 1012px !important;
         margin: 130px 0 0 -2em !important;
-        border-radius: 7px 7px 7px 7px;
-        box-shadow: 0px 0px 3px 10px rgba(86, 124, 194, 0.911);
     }
     .info {
         float: left;
         height: 680px;
         width: 442px !important;
-        border-radius: 0 7px 10px 7px;
-        background-color: #ffffff;
     }
 }
 
 @media screen and (max-width: 450px) {
     .wrapper {
-        height: 800px;
+        height: 830px;
         width: 99% !important;
-        margin: 130px auto !important;
-        border-radius: 7px 7px 7px 7px;
-        box-shadow: 0px 0px 3px 10px rgba(86, 124, 194, 0.911);
+        margin: 110px auto 1em auto !important;
     }
     .img img{
         border-radius: 7px 7px 0px 0px;
@@ -190,7 +188,6 @@ span {
         height: 50%;
         width: 100%!important;
         border-radius: 0 0 7px 7px;
-        background-color: #ffffff;
     }
     .btn {
         text-align: center;

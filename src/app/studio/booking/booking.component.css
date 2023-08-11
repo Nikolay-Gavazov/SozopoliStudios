@@ -27,7 +27,7 @@ label {
 }
 .form{
     position: relative;
-    max-width: 430px;
+    max-width: 500px;
     height: 800px;
     width: 100%;
     padding: 30px;
@@ -154,13 +154,13 @@ form{
 @media screen and (max-width: 1171px) {
     .form{
         margin-top: 10em;
-        height: 700px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .form{
         margin-top: 5em;
+        height: 700px;
     }
     header{
         font-size: 25px;
