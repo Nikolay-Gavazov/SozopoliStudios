@@ -12,8 +12,8 @@
                 <p class="error" *ngIf="inputEmail.errors?.['pattern']">
                     Email doesn`t match!
                 </p>
-
             </ng-container>
+            <p class="error" *ngIf="loginError">{{loginError}}</p>
             <div class="field input-field">
                 <input type="password" placeholder="Password" class="password" name="password" ngModel
                     #inputPass="ngModel" required minlength="6">
