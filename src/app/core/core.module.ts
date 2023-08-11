@@ -15,7 +15,6 @@ import { ContactsComponent } from './contacts/contacts.component';
     HeaderComponent,
     NotFoundComponent,
     AboutComponent,
-    ContactsComponent
   ],
   imports: [
     CommonModule,
