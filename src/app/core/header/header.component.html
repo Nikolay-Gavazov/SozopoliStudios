@@ -8,14 +8,14 @@
       </div>
       <a routerLink="/about">About</a>
       <a routerLink="/studios">Studios</a>
-      <a routerLink="/gallery">Gallery</a>
+      <a routerLink="/studios/gallery">Gallery</a>
       <span *ngIf="!isLoggedIn">
-          <a routerLink="/login">Login</a>
-          <a routerLink="/register">Register</a>
+          <a routerLink="/auth/login">Login</a>
+          <a routerLink="/auth/register">Register</a>
       </span>
       <span *ngIf="isLoggedIn">
-          <a routerLink="/book">Book now</a>
-          <a routerLink="/logout">Logout</a>
+          <a routerLink="/studios/book">Book now</a>
+          <a routerLink="/auth/logout">Logout</a>
       </span>
   </nav>
 
