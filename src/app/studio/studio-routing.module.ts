@@ -8,10 +8,10 @@ import { UserGuard } from '../core/guards/userGuard';
 
 
 const routes: Routes = [
-    {path: 'studios', component: StudiosComponent},
+    {path: '', component: StudiosComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'book', component: BookingComponent, canActivate:[UserGuard]},
-  {path: 'studios/:id', component: DetailsComponent},
+  {path: ':id', component: DetailsComponent},
 ];
 
 @NgModule({
