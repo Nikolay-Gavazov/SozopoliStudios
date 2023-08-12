@@ -24,7 +24,7 @@ import { StudioRoutingModule } from './studio-routing.module';
   imports: [
     CommonModule,
     FormsModule,
-    StudioRoutingModule
+    StudioRoutingModule,
   ]
 })
 export class StudioModule { }
