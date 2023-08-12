@@ -13,8 +13,8 @@ export class UserGuard implements CanActivate {
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):boolean | UrlTree{
         if(this.authService.isLoggedIn){
-            return true;
+            return true
         }
-        return this.router.createUrlTree(["/login"])
+        return this.router.createUrlTree(["/"])
     }
 }
