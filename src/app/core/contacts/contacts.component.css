@@ -25,6 +25,9 @@
 .col-md-4 {
     width: 25%;
 }
+h3{
+    text-align: center;
+}
 
 @media screen and (max-width: 450px) {
     .col-md-4{
