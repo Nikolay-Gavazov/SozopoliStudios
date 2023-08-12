@@ -21,7 +21,8 @@
     padding: 30px;
     border-radius: 6px;
     background: #d8f6f7;
-    margin: 10em auto
+    margin: 10em auto;
+    box-shadow: 0px 0px 3px 10px #0171d3;
 }
 
 header{
