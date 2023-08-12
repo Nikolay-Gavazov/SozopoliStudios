@@ -1,27 +1,153 @@
 # SozopoliStudios
+This is the exam project for the Angular course. For Frontend I used Angular and for backend I used Node.js, Express.js and Mongodb.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+**Sozopol Studios** is a web application for booking a holiday property. The owner offers his studios and customers can view and book them.
 
-## Development server
+## Steps for local instalation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<ol>
+  <li>
+    Clone the repository: https://github.com/Nikolay-Gavazov/SozopoliStudios
+  </li>
+  <li>
+    Open SozopoliStudios folder with VS Code
+    <ul>
+      <li>NPM install</li>
+      <li>Run Angular App with: <code>ng s</code> for a dev server. Navigate to <code>http://localhost:4200/</code>.</li>
+    </ul>
+  </li>
+</ol>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
+### User Features
+<ul>
+  <li>Register and Log in in to an account</li>
+  <li>Browse the studios and information about them.</li>
+  <li>Browse the Gallery</li>
+  <li>Registered users can send reservation request</li>
+</ul>
 
-## Build
+### Admin Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<ul>
+  <li>Creates a new studio</li>
+  <li>Edits and deletes existing studios</li>
+  <li>Browse the Gallery</li>
+  <li>Admin can't send reservation request</li>
+</ul>
 
-## Running unit tests
+## Demo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<ul>
+  <li>Check the Project Demo at https://sozopolistudios.web.app</li> 
+</ul>
 
-## Running end-to-end tests
+### Regular User
+<pre>
+  <code>
+  - Email: pesho1@gmail.com
+  - Password: 123456
+</code>
+</pre>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Admin
+<pre>
+  <code>
+  - Email: sozopoli@mail.bg
+  - Password: Mariana123
+</code>
+</pre>
 
-## Further help
+## Deployment
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<ul>
+  <li><a href="https://firebase.google.com/">Firebase</a> for the frontend deployment.</li>
+  <li><a href="https://render.com/">Render</a> for the backend deployment.</li>
+  <li><a href="https://www.mongodb.com/">MongoDB</a> database used for application is hosted on MongoDB Cloud.</li>
+</ul>
+
+## Screenshots
+
+### Navigation Not Logged in
+
+<img src="https://i.ibb.co/NNW0nzQ/Not-Logged-in-nav.jpg">
+
+### Navigation Logged in User
+
+<img src="https://i.ibb.co/nQXZtSv/Logged-in-nav.jpg">
+
+### Navigation Logged in Admin
+
+<img src="https://i.ibb.co/hC3w12C/Admin-nav.jpg">
+
+---
+
+### Footer
+
+<img src="https://i.ibb.co/5LMrDkk/Footer.jpg">
+
+---
+
+### Login
+
+<img src="https://i.ibb.co/HxRgYfp/Login.jpg">
+
+---
+
+### Register
+
+<img src="https://i.ibb.co/dJgSrNK/Register.jpg">
+
+---
+
+### Gallery without hover
+
+<img src="https://i.ibb.co/fqdGgZ1/Gallery-without-hover.jpg">
+
+---
+
+### Gallery hover
+
+<img src="https://i.ibb.co/Lkyw8bw/Gallery-hover.jpg">
+
+---
+
+### Studios
+
+<img src="https://i.ibb.co/SBjq2jK/Studios-Page.jpg">
+
+---
+
+### Studios Details User
+
+<img src="https://i.ibb.co/Ny2SBYg/Studios-details-User.jpg">
+
+
+---
+
+### Studios Details Admin
+
+<img src="https://i.ibb.co/GC03X5c/Studios-details-Admin.jpg">
+
+
+---
+
+### Edit
+
+<img src="https://i.ibb.co/vQcqkCy/Edit.jpg">
+
+
+---
+
+### Book
+
+<img src="https://i.ibb.co/hRNL9Q3/Book.jpg">
+
+
+---
+
+### Create
+
+<img src="https://i.ibb.co/PGRVG2R/Create.jpg">
+
