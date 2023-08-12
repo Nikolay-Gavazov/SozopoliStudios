@@ -16,7 +16,7 @@
       </span>
       
       <span *ngIf="isLoggedIn">
-          <a routerLink="/studios/book">Book now</a>
+          <a  *ngIf="!isAdmin" routerLink="/studios/book">Book now</a>
           <a routerLink="/auth/logout">Logout</a>
       </span>
       <span *ngIf="isAdmin">
@@ -50,7 +50,7 @@
                 <a class="nav-link active" aria-current="page" routerLink="/studios/create">Create</a>
               </li>
               <div *ngIf="isLoggedIn">
-                <li class="nav-item">
+                <li class="nav-item" *ngIf="!isAdmin">
                   <a class="nav-link active" aria-current="page" routerLink="/studios/book">Book now</a>
                 </li>
                 <li class="nav-item">
