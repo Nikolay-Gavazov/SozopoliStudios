@@ -68,3 +68,86 @@ This is the exam project for the Angular course. For Frontend I used Angular and
 </ul>
 
 ## Screenshots
+
+### Navigation Not Logged in
+
+<img src="https://i.ibb.co/NNW0nzQ/Not-Logged-in-nav.jpg">
+
+### Navigation Logged in User
+
+<img src="https://i.ibb.co/nQXZtSv/Logged-in-nav.jpg">
+
+### Navigation Logged in Admin
+
+<img src="https://i.ibb.co/hC3w12C/Admin-nav.jpg">
+
+---
+
+### Footer
+
+<img src="https://i.ibb.co/5LMrDkk/Footer.jpg">
+
+---
+
+### Login
+
+<img src="https://i.ibb.co/HxRgYfp/Login.jpg">
+
+---
+
+### Register
+
+<img src="https://i.ibb.co/dJgSrNK/Register.jpg">
+
+---
+
+### Gallery without hover
+
+<img src="https://i.ibb.co/fqdGgZ1/Gallery-without-hover.jpg">
+
+---
+
+### Gallery hover
+
+<img src="https://i.ibb.co/Lkyw8bw/Gallery-hover.jpg">
+
+---
+
+### Studios
+
+<img src="https://i.ibb.co/SBjq2jK/Studios-Page.jpg">
+
+---
+
+### Studios Details User
+
+<img src="https://i.ibb.co/Ny2SBYg/Studios-details-User.jpg">
+
+
+---
+
+### Studios Details Admin
+
+<img src="https://i.ibb.co/GC03X5c/Studios-details-Admin.jpg">
+
+
+---
+
+### Edit
+
+<img src="https://i.ibb.co/vQcqkCy/Edit.jpg">
+
+
+---
+
+### Book
+
+<img src="https://i.ibb.co/hRNL9Q3/Book.jpg">
+
+
+---
+
+### Create
+
+<img src="https://i.ibb.co/PGRVG2R/Create.jpg">
+
