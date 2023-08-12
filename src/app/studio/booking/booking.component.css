@@ -33,9 +33,8 @@ label {
     padding: 30px;
     border-radius: 6px;
     background: #d8f6f7;
-    margin: auto;
+    margin: 5em auto;
     box-shadow: 0px 0px 3px 10px #0171d3;
-    margin: 20px auto;
 }
 
 .forms.show-signup .form.login{
@@ -48,7 +47,6 @@ header{
     color: #232836;
     text-align: center;
 }
-
 .form .field{
     position: relative;
     height: 50px;
@@ -162,7 +160,7 @@ header{
 
 @media screen and (max-width: 450px) {
     .form{
-        margin-top: 5em;
+        margin-top: 7em;
         height: 700px;
     }
     header{
