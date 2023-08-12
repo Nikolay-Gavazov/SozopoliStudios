@@ -83,21 +83,27 @@ This is the exam project for the Angular course. For Frontend I used Angular and
 
 ---
 
-### Footer
+### Home
 
-<img src="https://i.ibb.co/5LMrDkk/Footer.jpg">
+<img src="https://i.ibb.co/K2dg6Gt/Home1.jpg">
+<img src="https://i.ibb.co/B6vdbrT/Home2.jpg">
+---
+
+### About
+
+<img src="https://i.ibb.co/LC2T0QG/About.jpg">
 
 ---
 
 ### Login
 
-<img src="https://i.ibb.co/HxRgYfp/Login.jpg">
+<img src="https://i.ibb.co/WDNN9VS/Login.jpg">
 
 ---
 
 ### Register
 
-<img src="https://i.ibb.co/dJgSrNK/Register.jpg">
+<img src="https://i.ibb.co/xg654k7/Register.jpg">
 
 ---
 
@@ -135,19 +141,24 @@ This is the exam project for the Angular course. For Frontend I used Angular and
 
 ### Edit
 
-<img src="https://i.ibb.co/vQcqkCy/Edit.jpg">
+<img src="https://i.ibb.co/10Z9VV6/Edit.jpg">
 
 
 ---
 
 ### Book
 
-<img src="https://i.ibb.co/hRNL9Q3/Book.jpg">
+<img src="https://i.ibb.co/Q6DRxM4/Book.jpg">
 
 
 ---
 
 ### Create
 
-<img src="https://i.ibb.co/PGRVG2R/Create.jpg">
+<img src="https://i.ibb.co/H7p0ffB/Create.jpg">
 
+---
+
+### Footer
+
+<img src="https://i.ibb.co/5LMrDkk/Footer.jpg">
