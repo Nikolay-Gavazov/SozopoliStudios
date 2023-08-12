@@ -10,8 +10,26 @@ p{
     text-align: center;
     
 }
+.weather .weatherwidget-io{
+    width: 81% !important;
+    margin: auto;
+    border-radius: 12px;
+}
+
 @media screen and (max-width: 1171px) {
     div{
         margin-top: 14em;
     }
 }
+@media screen and (max-width: 450px) {
+    .weather{
+        margin: 1em auto 2em auto;
+    }
+.welcome{
+        margin: 6em auto auto auto
+    }
+    div{
+        margin: 1em auto
+    }
+}
+
