@@ -1,26 +1,27 @@
 <header>
   <nav class="desktop">
       <div>
-          <i routerLink="/" class="logo"><img
+        <a href="/" class="logo">
+          <img
                   src="https://i.ibb.co/F7zTTVy/sozopoli-studios-low-resolution-logo-color-on-transparent-background.png"
-                  alt="logo"></i>
-  
+                  alt="logo">
+                </a>
       </div>
-      <a routerLink="/about">About</a>
-      <a routerLink="/studios">Studios</a>
-      <a routerLink="/studios/gallery">Gallery</a>
+      <a class="a" routerLink="/about">About</a>
+      <a class="a" routerLink="/studios">Studios</a>
+      <a class="a" routerLink="/studios/gallery">Gallery</a>
       
       <span *ngIf="!isLoggedIn">
-          <a routerLink="/auth/login">Login</a>
-          <a routerLink="/auth/register">Register</a>
+          <a class="a" routerLink="/auth/login">Login</a>
+          <a class="a" routerLink="/auth/register">Register</a>
       </span>
       
       <span *ngIf="isLoggedIn">
-          <a  *ngIf="!isAdmin" routerLink="/studios/book">Book now</a>
-          <a routerLink="/auth/logout">Logout</a>
+          <a class="a" *ngIf="!isAdmin" routerLink="/studios/book">Book now</a>
+          <a class="a" routerLink="/auth/logout">Logout</a>
       </span>
       <span *ngIf="isAdmin">
-        <a routerLink="/studios/create">Create</a>
+        <a class="a" routerLink="/studios/create">Create</a>
       </span>
   </nav>
 
