@@ -35,7 +35,7 @@ export class BookingComponent implements OnInit{
       if(response){
         alert("Your Booking request has been successfully sent");
         
-          this.router.navigate(["/home"]);
+          this.router.navigate(["/studios"]);
       }
     },
     error => {

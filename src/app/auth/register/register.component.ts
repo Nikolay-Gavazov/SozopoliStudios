@@ -22,7 +22,7 @@ export class RegisterComponent {
       next:(user)=>{
         localStorage.setItem("user", JSON.stringify(user));
       form.reset();
-      this.router.navigate(['/']);
+      this.router.navigate(['/studios']);
       },
       error:(error)=>{
         this.loginError = error.error.message;

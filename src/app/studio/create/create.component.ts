@@ -17,7 +17,7 @@ export class CreateComponent {
     }
     const {studioName, img, description} = form.value;
     this.studioService.createStudio(studioName, img, description).subscribe((response)=>{
-      this.router.navigate(["/"])
+      this.router.navigate(["/studios"])
     });
   }
 }
