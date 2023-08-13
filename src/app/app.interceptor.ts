@@ -14,7 +14,7 @@ export class AppInterceptor implements HttpInterceptor{
         next: HttpHandler
         ): Observable<HttpEvent<any>> {
         const userData = this.authService.userData;
-        if(userData){
+        /* if(userData){
             req = req.clone({
                 setHeaders:{'X-Authorization':userData.token}
             })
@@ -22,7 +22,7 @@ export class AppInterceptor implements HttpInterceptor{
             req = req.clone({
                 setHeaders:{'Content-Type':'application/json'}
             })
-        }
+        } */
         if(req.url.startsWith('/api')){
             
             req = req.clone({
