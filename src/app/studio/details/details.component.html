@@ -1,6 +1,6 @@
 <div *ngIf="isLoading">
     <app-loader />
-  </div>
+</div>
 <section id="deatils-page" *ngIf="!isLoading">
     <div class="wrapper">
         <div class="img">
@@ -13,7 +13,7 @@
                     <p>{{studio.description}}</p>
                 </div>
             </div>
-            
+
             <div class="btn">
                 <a routerLink="/studios/gallery" class="morePhotos">More photos</a>
                 <a routerLink="/studios/book" class="bookNow">Book now</a>
