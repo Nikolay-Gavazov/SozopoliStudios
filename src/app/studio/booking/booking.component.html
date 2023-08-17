@@ -1,38 +1,44 @@
 <div *ngIf="isLoading">
     <app-loader />
-  </div>
+</div>
 <div class="form booking">
     <div class="form-content">
         <header>Book your reservation</header>
         <form #form="ngForm" (ngSubmit)="submit(form)">
             <div class="field input-field">
                 <h5>Your Name:</h5>
-                <input type="email" placeholder="Ivan Ivanov" class="input" name="name" ngModel #inputName="ngModel" required minlength="3">
-            </div>
-            
-            <div class="field input-field">
-                <h5>Email:</h5>
-                <input type="email" placeholder="ivan@gmail.com" class="input" name="email" ngModel #inputEmail="ngModel" required pattern="^[a-zA-Z0-9]{3,}@[a-z]+\.[a-z]{2,3}$">
-            </div>
-            
-            <div class="field input-field">
-                <h5>Check in:</h5>
-                <input type="date" id="start" name="tripStart" value="{{date}}" min="2023-01-01" max="2023-12-31" ngModel #inputDateFrom="ngModel" required=""> 
+                <input type="email" placeholder="Ivan Ivanov" class="input" name="name" ngModel #inputName="ngModel"
+                    required minlength="3">
             </div>
 
             <div class="field input-field">
-               <h5>Check out:</h5>
-                <input type="date" id="end" name="tripEnd" value="{{date}}" min="2023-01-01" max="2023-12-31" ngModel #inputDateEnd="ngModel" required="">
+                <h5>Email:</h5>
+                <input type="email" placeholder="ivan@gmail.com" class="input" name="email" ngModel
+                    #inputEmail="ngModel" required pattern="^[a-zA-Z0-9]{3,}@[a-z]+\.[a-z]{2,3}$">
+            </div>
+
+            <div class="field input-field">
+                <h5>Check in:</h5>
+                <input type="date" id="start" name="tripStart" value="{{date}}" min="2023-01-01" max="2023-12-31"
+                    ngModel #inputDateFrom="ngModel" required="">
+            </div>
+
+            <div class="field input-field">
+                <h5>Check out:</h5>
+                <input type="date" id="end" name="tripEnd" value="{{date}}" min="2023-01-01" max="2023-12-31" ngModel
+                    #inputDateEnd="ngModel" required="">
             </div>
             <div class="field input-field">
                 <h5>Studio:</h5>
-                <select name="studioSelect" ngModel #inputStudio ="ngModel">
-                    <option *ngFor="let studio of studiosList" value="{{studio.studioName}}" required>{{studio.studioName}}</option>
+                <select name="studioSelect" ngModel #inputStudio="ngModel">
+                    <option *ngFor="let studio of studiosList" value="{{studio.studioName}}" required>
+                        {{studio.studioName}}</option>
                 </select>
-             </div>
+            </div>
             <div class="field input-field" id="comments">
                 <h5>Comments:</h5>
-                <textarea type="text" placeholder="Comments(Optional)" class="input" name="comment" ngModel #inputComment="ngModel" ></textarea>
+                <textarea type="text" placeholder="Comments(Optional)" class="input" name="comment" ngModel
+                    #inputComment="ngModel"></textarea>
             </div>
 
             <div class="field button-field">
