@@ -4,17 +4,19 @@
         <form #form="ngForm" (ngSubmit)="submit(form)">
             <div class="field input-field">
                 <h5>Studio Name:</h5>
-                <input type="text" placeholder="Studio1" class="input" name="studioName" ngModel #inputName="ngModel" required minlength="3">
+                <input type="text" placeholder="Studio1" class="input" name="studioName" ngModel #inputName="ngModel"
+                    required minlength="3">
             </div>
-            
+
             <div class="field input-field">
                 <h5>Img Link:</h5>
-                <input type="text" placeholder="https://" class="input" name="img" ngModel #inputImg="ngModel" required >
+                <input type="text" placeholder="https://" class="input" name="img" ngModel #inputImg="ngModel" required>
             </div>
-            
+
             <div class="field input-field" id="comments">
                 <h5>Description:</h5>
-                <textarea placeholder="Description" class="input" name="description" ngModel #inputDescription="ngModel" required minlength="10"></textarea>
+                <textarea placeholder="Description" class="input" name="description" ngModel #inputDescription="ngModel"
+                    required minlength="10"></textarea>
             </div>
 
             <div class="field button-field">
