@@ -8,15 +8,15 @@ import { StudioService } from '../studio.service';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent {
-  constructor(private studioService: StudioService, private router: Router){
+  constructor(private studioService: StudioService, private router: Router) {
 
   }
-  submit(form: NgForm){
-    if(form.invalid){
+  submit(form: NgForm) {
+    if (form.invalid) {
       return;
     }
-    const {studioName, img, description} = form.value;
-    this.studioService.createStudio(studioName, img, description).subscribe((response)=>{
+    const { studioName, img, description } = form.value;
+    this.studioService.createStudio(studioName, img, description).subscribe((response) => {
       this.router.navigate(["/studios"])
     });
   }
