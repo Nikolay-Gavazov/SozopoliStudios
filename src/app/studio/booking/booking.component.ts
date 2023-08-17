@@ -9,19 +9,19 @@ import { ContactService } from '../contact.service';
   templateUrl: './booking.component.html',
   styleUrls: ['./booking.component.css'],
 })
-export class BookingComponent implements OnInit{
+export class BookingComponent implements OnInit {
   studiosList: Studio[] = [];
   isLoading: boolean = true;
 
-  constructor(private studioService: StudioService, private contact: ContactService, private router: Router){}
+  constructor(private studioService: StudioService, private contact: ContactService, private router: Router) { }
 
   ngOnInit(): void {
     this.studioService.getStudios().subscribe({
-      next:(studios) =>{
+      next: (studios) => {
         this.isLoading = false;
         this.studiosList = studios;
       },
-      error:(error) =>{
+      error: (error) => {
         this.isLoading = false;
         console.log(error);
       }
@@ -29,18 +29,18 @@ export class BookingComponent implements OnInit{
   }
   date = new Date();
 
-  submit(form: NgForm){
-    console.log(form.value); 
-    this.contact.PostMessage(form.value).subscribe(response =>{
-      if(response){
+  submit(form: NgForm) {
+    console.log(form.value);
+    this.contact.PostMessage(form.value).subscribe(response => {
+      if (response) {
         alert("Your Booking request has been successfully sent");
-        
-          this.router.navigate(["/studios"]);
+
+        this.router.navigate(["/studios"]);
       }
     },
-    error => {
-      console.log(error);
-      
-    })
+      error => {
+        console.log(error);
+
+      })
   }
 }
