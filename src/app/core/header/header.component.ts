@@ -12,10 +12,10 @@ export class HeaderComponent {
   get isLoggedIn() {
     return this.authService.isLoggedIn;
   }
-  get isAdmin(){
-    if(this.authService.isLoggedIn){
+  get isAdmin() {
+    if (this.authService.isLoggedIn) {
       return this.authService.userData.isAdmin;
     }
   }
-  
+
 }
