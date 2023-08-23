@@ -11,9 +11,9 @@ export class AdminGuard implements CanActivate {
 
     }
 
-    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):boolean | UrlTree{
-        if(this.authService.isLoggedIn){
-            if(this.authService.userData.isAdmin){
+    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree {
+        if (this.authService.isLoggedIn) {
+            if (this.authService.userData.isAdmin) {
                 return true;
             }
         }
