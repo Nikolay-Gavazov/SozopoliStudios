@@ -1,4 +1,4 @@
-.container{
+.container {
     background: white;
     box-shadow: 0px 0px 3px 10px #0171d3;
     margin: auto;
@@ -6,7 +6,7 @@
     width: 80%;
 }
 
-.align-items-center{
+.align-items-center {
     background-color: #0171d3;
     border-radius: 50px;
     width: 50px;
@@ -14,23 +14,27 @@
     margin: auto;
 }
 
-.dbox p span {display: block;
+.dbox p span {
+    display: block;
     font-weight: 500;
     color: #0171d3;
 }
+
 .col-lg-8 {
     flex: 0 0 auto;
     width: 90.666667%;
 }
+
 .col-md-4 {
     width: 25%;
 }
-h3{
+
+h3 {
     text-align: center;
 }
 
 @media screen and (max-width: 450px) {
-    .col-md-4{
+    .col-md-4 {
         display: contents;
     }
 }
