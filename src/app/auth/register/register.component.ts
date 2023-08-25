@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  loginError:string = '';
+  loginError: string = '';
   constructor(private authService: AuthService, private router: Router) { }
 
   register(form: NgForm) {
@@ -19,12 +19,12 @@ export class RegisterComponent {
     const { email, password } = form.value;
 
     this.authService.register(email, password).subscribe({
-      next:(user)=>{
+      next: (user) => {
         localStorage.setItem("user", JSON.stringify(user));
-      form.reset();
-      this.router.navigate(['/studios']);
+        form.reset();
+        this.router.navigate(['/studios']);
       },
-      error:(error)=>{
+      error: (error) => {
         this.loginError = error.error.message;
       }
     });
