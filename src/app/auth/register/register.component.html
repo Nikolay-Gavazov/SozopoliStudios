@@ -3,7 +3,8 @@
         <header>Register</header>
         <form #form="ngForm" (ngSubmit)="register(form)">
             <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" name="email" #emailInput="ngModel" required pattern="^[a-zA-Z0-9]{3,}@[a-z]+\.[a-z]{2,3}$" ngModel>
+                <input type="email" placeholder="Email" class="input" name="email" #emailInput="ngModel" required
+                    pattern="^[a-zA-Z0-9]{3,}@[a-z]+\.[a-z]{2,3}$" ngModel>
             </div>
             <ng-container *ngIf="emailInput.touched">
                 <p class="error" *ngIf="emailInput.errors?.['required']">
