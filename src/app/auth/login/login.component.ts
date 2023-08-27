@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  loginError:string = '';
+  loginError: string = '';
   constructor(private authService: AuthService, private router: Router) { }
 
   login(form: NgForm): void {
@@ -18,12 +18,12 @@ export class LoginComponent {
     const { email, password } = form.value;
 
     this.authService.login(email, password).subscribe({
-      next:(user)=>{
+      next: (user) => {
         localStorage.setItem("user", JSON.stringify(user));
-      form.reset();
-      this.router.navigate(['/studios']);
+        form.reset();
+        this.router.navigate(['/studios']);
       },
-      error:(error)=>{
+      error: (error) => {
         this.loginError = error.error.message;
       }
     });
