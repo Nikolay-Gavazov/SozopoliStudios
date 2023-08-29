@@ -3,7 +3,8 @@
         <header>Login</header>
         <form #form="ngForm" (ngSubmit)="login(form)">
             <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" name="email" ngModel #inputEmail="ngModel" required pattern="^[a-zA-Z0-9]{3,}@[a-z]+\.[a-z]{2,3}$">
+                <input type="email" placeholder="Email" class="input" name="email" ngModel #inputEmail="ngModel"
+                    required pattern="^[a-zA-Z0-9]{3,}@[a-z]+\.[a-z]{2,3}$">
             </div>
             <ng-container *ngIf="inputEmail.touched">
                 <p class="error" *ngIf="inputEmail.errors?.['required']">
