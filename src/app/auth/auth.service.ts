@@ -19,8 +19,8 @@ export class AuthService implements OnDestroy {
   subscription: Subscription;
   constructor(private http: HttpClient) {
     this.subscription = this.user$.subscribe((user) => {
-    this.user = user;
-    
+      this.user = user;
+
     })
   }
 
@@ -32,7 +32,7 @@ export class AuthService implements OnDestroy {
 
   register(email: string, password: string) {
     return this.http.post<User>(`${apiUrl}/register`, { email: email, password: password }).pipe(tap(user => this.user$$.next(user)));
-    
+
   }
 
   logout() {
@@ -42,10 +42,10 @@ export class AuthService implements OnDestroy {
   get isLoggedIn() {
     return localStorage.getItem("user");
   }
-  
+
   get userData() {
     const user: any = localStorage.getItem("user");
-    if(user){
+    if (user) {
       return JSON.parse(user)
     }
     return null;
