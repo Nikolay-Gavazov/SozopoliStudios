@@ -7,9 +7,9 @@ import { GuestGuard } from '../core/guards/guestGuard';
 import { UserGuard } from '../core/guards/userGuard';
 
 const routes: Routes = [
-    { path: 'login', component: LoginComponent, canActivate:[GuestGuard] },
-    { path: 'register', component: RegisterComponent, canActivate:[GuestGuard] },
-    { path: 'logout', component: LogoutComponent,canActivate:[UserGuard] },
+    { path: 'login', component: LoginComponent, canActivate: [GuestGuard] },
+    { path: 'register', component: RegisterComponent, canActivate: [GuestGuard] },
+    { path: 'logout', component: LogoutComponent, canActivate: [UserGuard] },
 ];
 
 @NgModule({
