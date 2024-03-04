@@ -30,7 +30,6 @@ export class BookingComponent implements OnInit {
   date = new Date();
 
   submit(form: NgForm) {
-    console.log(form.value);
     this.contact.PostMessage(form.value).subscribe(response => {
       if (response) {
         alert("Your Booking request has been successfully sent");
